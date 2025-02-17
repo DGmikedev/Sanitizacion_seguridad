@@ -1,9 +1,9 @@
 # Sanitización de codigo por lenguaje.
 
 ## Python
-* SQL Injection
-* hardcode password
-* request
+* SQL INJECTION
+* HARCODED PASSWORD
+* BAD REQUEST
 
 ## C++ 
 * sprinf
