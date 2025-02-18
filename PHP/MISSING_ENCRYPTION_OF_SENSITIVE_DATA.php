@@ -49,12 +49,4 @@ $formato = '/^\d{4}-\d{2}-\d{2}$/';
 	// eliminamos el zanitizante y agregamos el parametro true:  
 		$dato_2 = isset($_POST['dato_2',true]) ? filter_var($_POST['dato_2',true],): 0; 
 	
-	
-	
-	
-	
-	
-	
-	
-	
 ?>
