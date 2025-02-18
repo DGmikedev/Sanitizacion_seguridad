@@ -44,7 +44,6 @@ $.each(arr, function (key, value) {
 //                       sin inyectar variables inyectando en el DOM html limpio y luego recorriendo y 
 //                       remplazando los .text y .attr de las options 
 
-
 /*-- EXAMPLE 4 --*/
 
 function funcion_de_consulta() {  
@@ -95,7 +94,6 @@ function get_url_valores(){
 }
 
 
-
 // descripción solución: Se remplaza la funcion para sacar parametros de la url por
 //                       getparametros ya que esta lo obtendra de una forma mas segura, 
 //                       sera necesario contemplar que ocupas remplacer el %20 por un espacio con 
@@ -141,11 +139,4 @@ const $tabla = document.getElementById("archivo_donde_va_la_tabla");
 
 // descripcion de la solución: Se sustituye la forma de armar el html concatenando los valores a una nueva forma
 
-					
-					
-					
-					
-					
-					
-					
 </script>
