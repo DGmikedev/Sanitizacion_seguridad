@@ -34,10 +34,4 @@
 	
 	// descripción solución: Se generan get y set
 	
-	
-	
-	
-	
-	
-
 </script>
