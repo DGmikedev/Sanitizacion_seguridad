@@ -60,11 +60,14 @@ $directorio_donde_caen_los_archivos.$randomnombre);
 //                             Se le aplican filtros a el archivo
 
 
+
+/*-- Example 7 --*/
+
 $nombre_del_archivo = filter_var($_FILES['param1']['nombre'],FILTER_SANITIZE_SPECIAL_CHARS); 
 $ruta = filter_var('/ruta/generica',FILTER_SANITIZE_SPECIAL_CHARS); 
 
 if (move_uploaded_file(filter_var($_FILES['param1']['nombre_temporal'],FILTER_SANITIZE_SPECIAL_CHARS), 
-filter_var($sRuta . $nombre_del_archvio,FILTER_SANITIZE_SPECIAL_CHARS)))
+filter_var($ruta . $nombre_del_archvio,FILTER_SANITIZE_SPECIAL_CHARS)))
 
 
 ?>
