@@ -1,10 +1,9 @@
-# UNCHEKED_INPUT_FOR_LOOP_CONDITION
 
-maxparams = 10
-limite = list(dict.items(request.get_json()))[:maxparams]
-for key, value in limite:
+# STORED_XSS
 
-# descripción solución: Establecer un limite en las iteraciones, para que no se desborden
+#           ESCAPE
+registros = escape(result)
+registros['respuesta'] = 1
+return registros
 
-# codigo sanitizado.
-
+# descripción solución: Escapar la respuesta que devuelve dicha funcion hacia el response de la api
