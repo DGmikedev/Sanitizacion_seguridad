@@ -2,7 +2,7 @@
 
 # REMPLAZO DE FUNCIONES EN C++ 2003
 
-## strcat, strcat, wcscat, _tcsat, lstrcat, StrCat 
+## strcat, wcscat, _tcsat, lstrcat, StrCat 
 
 * REMPLZAR CON: StringCchCatA
 
@@ -31,7 +31,7 @@ referencia: https://learn.microsoft.com/es-es/windows/win32/api/strsafe/nf-strsa
 
 #include "strsafe.h" 
 
-int hr = StringCchPrintf(cNomArchivo,sizeof(cNomArchivo),"%s%s",RUTA_IMAGENES, sNomImagenOTRO);
+int hr = StringCchPrintf(c_nom_archivo,sizeof(c_nom_archivo),"%s%s",path_imgs, s_nom_imagen_otro);
 
 sintaxis 
 
@@ -116,7 +116,6 @@ STRSAFEAPI StringCchLengthA(
   [in]  size_t         cchMax,
   [out] size_t         *pcchLength
 );
-  
 
 ```
 referencia: https://learn.microsoft.com/es-es/windows/win32/api/strsafe/nf-strsafe-stringcchlengtha
@@ -142,3 +141,60 @@ void FillMemory(
 
 ```
 referencia: https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/aa366561(v=vs.85)
+
+## memcpy, strncpy, wcsncpy, _tcsncpy
+
+* REMPLZAR CON: StringCbCopyNA
+
+```C++
+
+#include<strsafe.h>  
+
+int hr = 0;			
+
+hr = StringCbCopyNA(c_fecha_res, 12, fecha_resolucion, 12);  
+
+sintaxis 
+
+STRSAFEAPI StringCbCopyNA(
+  [out] STRSAFE_LPSTR  pszDest,
+  [in]  size_t         cbDest,
+  [in]  STRSAFE_PCNZCH pszSrc,
+  [in]  size_t         cbToCopy
+);
+
+```
+referencia: https://learn.microsoft.com/es-es/windows/win32/api/strsafe/nf-strsafe-stringcbcopyna
+
+## CopyFile
+
+* REMPLZAR CON: 
+
+```C++
+
+// ASEGURARSE DEL COMPORTAMIENTO DE LA FUNCIÓN
+
+if ( CopyFile( FileData.cFileName, szNewPath, FALSE ) )
+{   
+    dwAttrs = GetFileAttributes( FileData.cFileName ); 
+
+    if ( dwAttrs==INVALID_FILE_ATTRIBUTES ) return; 
+
+        if ( !( dwAttrs & FILE_ATTRIBUTE_READONLY ) ) 
+            {   
+                SetFileAttributes(szNewPath, 
+                dwAttrs | FILE_ATTRIBUTE_READONLY); 
+            } 
+}else{ 
+    printf("Could not copy file.\n"); 
+    return;
+} 
+
+```
+referencia: 
+https://stackoverflow.com/questions/10195343/copy-a-file-in-a-sane-safe-and-efficient-way
+https://learn.microsoft.com/en-us/windows/win32/fileio/retrieving-and-changing-file-attributes
+
+
+
+
