@@ -19,3 +19,4 @@ STRSAFEAPI StringCchCatA(
 );
 
 ```
+referencia: https://learn.microsoft.com/es-es/windows/win32/api/strsafe/nf-strsafe-stringcchcata
