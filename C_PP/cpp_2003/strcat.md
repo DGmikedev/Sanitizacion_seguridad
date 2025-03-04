@@ -196,5 +196,44 @@ https://stackoverflow.com/questions/10195343/copy-a-file-in-a-sane-safe-and-effi
 https://learn.microsoft.com/en-us/windows/win32/fileio/retrieving-and-changing-file-attributes
 
 
+## mkdir
 
+* REMPLZAR CON: CreateDirectory
 
+```C++
+
+CreateDirectory(RUTA_IMAGENES, sa);
+/**** seguridad directorios ****************************************/
+        SECURITY_ATTRIBUTES  sa;
+        SECURITY_DESCRIPTOR  sd;
+
+        InitializeSecurityDescriptor(&sd,SECURITY_DESCRIPTOR_REVISION);
+        SetSecurityDescriptorDacl(&sd,TRUE,NULL,FALSE);
+        SetSecurityDescriptorGroup(&sd,NULL,  FALSE ); 
+        SetSecurityDescriptorSacl(&sd, FALSE, NULL, FALSE );
+
+        sa.nLength              = sizeof(SECURITY_ATTRIBUTES);
+        sa.lpSecurityDescriptor = &sd;
+        sa.bInheritHandle       = TRUE;
+        /********************************************************/
+
+```
+referencia: 
+
+## AddressOfLocalVarReturned
+
+* REMPLZAR CON: 
+
+```BASH
+
+Para remediar el problema de AddressOfLocalVarReturned, se pueden seguir los siguientes pasos:
+1.- Identificar la función o método que está devolviendo la dirección de una variable local.
+2.- Revisar el código de la función o método para asegurarse de que no está devolviendo la dirección de una variable local.
+3.- Si la función o método está devolviendo la dirección de una variable local, reemplazarla por una variable global o estática para evitar que se libere de la memoria cuando finaliza la función o método.
+4-. Si no es posible reemplazar la variable local por una global o estática, utilizar una variable dinámica que se libere de la memoria cuando se termine de utilizar.
+5.- Si la función o método no está devolviendo la dirección de una variable local, buscar la fuente del problema y corregirla.											
+
+```
+referencia: 
+
+ 
