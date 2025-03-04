@@ -2,12 +2,7 @@
 
 # REMPLAZO DE FUNCIONES EN C++ 2003
 
-## strcat   
-## strcat 
-## wcscat 
-## _tcsat
-## lstrcat
-## StrCat 
+## strcat, strcat, wcscat, _tcsat, lstrcat, StrCat 
 
 * REMPLZAR CON: StringCchCatA
 
