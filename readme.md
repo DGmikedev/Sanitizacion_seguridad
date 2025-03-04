@@ -34,7 +34,11 @@
 * [USE_OF_OBSOLETE_FUNCTIONS](C_PP/USE_OF_OBSOLETE_FUNCTIONS.cpp)
 
 [CATÁLGOO_DE_FUCNIONES_DEPRECADAS_C++_2003](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md)
-[strcat](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md#strcat)
+* [strcat](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md#strcat)
+* [wcscat](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md#wcscat)
+* [_tcsat](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md#_tcsat)
+* [lstrcat](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md#lstrcat)
+* [StrCat](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md#StrCat)
 <table>
     <tr>
         <td>strcat</td>
