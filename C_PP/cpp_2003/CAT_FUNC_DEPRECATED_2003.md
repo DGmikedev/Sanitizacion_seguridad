@@ -24,7 +24,7 @@ STRSAFEAPI StringCchCatA(
 referencia: https://learn.microsoft.com/es-es/windows/win32/api/strsafe/nf-strsafe-stringcchcata
 
 ## sprintf, swprintf, _stprintf, wsprintf, wnsprintf, _snprintf, _snwprintf, _sntprintf
-
+ 
 * REMPLZAR CON: StringCchPrintf
 
 ```C++

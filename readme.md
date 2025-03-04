@@ -35,30 +35,31 @@
 
 <table>
     <tr>
+        <th colspan="5">[CATALGOO_DE_FUCNIONES_DEPRECADAS_C++_2003](CPP/CAT_FUNC_DEPRECATED_2003.md)</th>
+    </tr>
+    <tr>
         <td>strcat</td>
         <td>wcscat</td>
         <td>_tcsat</td>
         <td>lstrcat</td>
+        <td>StrCat</td>
     </tr>
     <tr>
-        <td>StrCat</td>
+        <td>wsprintf</td>
+        <td>wnsprintf</td>
         <td>sprintf</td>
         <td>swprintf</td>
         <td>_stprintf</td>
     </tr>
     <tr>
-        <td>wsprintf</td>
-        <td>wnsprintf</td>
+        <td>_sntprintf</td>
+        <td>atol</td>
+        <td>atoi</td>
         <td>_snprintf</td>
         <td>_snwprintf</td>
     </tr>
     <tr>
-        <td>_sntprintf</td>
-        <td>atol</td>
-        <td>atoi</td>
         <td>strlen</td>
-    </tr>
-    <tr>
         <td>wcslen</td>
         <td>_tcslen</td>
         <td>memset</td>
@@ -69,16 +70,9 @@
         <td>wcsncpy</td>
         <td>_tcsncpy</td>
         <td>CopyFile</td>
+        <td>mkdir</td>
     </tr>
 </table>
-, , , , , , 
-, , , , , 
-, , , , , , 
-, , , , , , 
-, mkdir
-
-
-
 
 ## PHP
 * [CLIENT_USE_OF_IFRAME_WITHOUT_SANDBOX](PHP/CLIENT_USE_OF_IFRAME_WITHOUT_SANDBOX.php)
