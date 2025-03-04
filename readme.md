@@ -33,6 +33,53 @@
 * [UNCHECKED_RETURN_VALUE](C_PP/UNCHECKED_RETURN_VALUE.cpp)
 * [USE_OF_OBSOLETE_FUNCTIONS](C_PP/USE_OF_OBSOLETE_FUNCTIONS.cpp)
 
+<table>
+    <tr>
+        <td>strcat</td>
+        <td>wcscat</td>
+        <td>_tcsat</td>
+        <td>lstrcat</td>
+    </tr>
+    <tr>
+        <td>StrCat</td>
+        <td>sprintf</td>
+        <td>swprintf</td>
+        <td>_stprintf</td>
+    </tr>
+    <tr>
+        <td>wsprintf</td>
+        <td>wnsprintf</td>
+        <td>_snprintf</td>
+        <td>_snwprintf</td>
+    </tr>
+    <tr>
+        <td>_sntprintf</td>
+        <td>atol</td>
+        <td>atoi</td>
+        <td>strlen</td>
+    </tr>
+    <tr>
+        <td>wcslen</td>
+        <td>_tcslen</td>
+        <td>memset</td>
+        <td>memcpy</td>
+    </tr>
+    <tr>
+        <td>strncpy</td>
+        <td>wcsncpy</td>
+        <td>_tcsncpy</td>
+        <td>CopyFile</td>
+    </tr>
+</table>
+, , , , , , 
+, , , , , 
+, , , , , , 
+, , , , , , 
+, mkdir
+
+
+
+
 ## PHP
 * [CLIENT_USE_OF_IFRAME_WITHOUT_SANDBOX](PHP/CLIENT_USE_OF_IFRAME_WITHOUT_SANDBOX.php)
 * [DEPRECATED_FUNCTIONS](PHP/DEPRECATED_FUNCTIONS.php)
