@@ -2,6 +2,8 @@
 
 ## PYTHON
 
+
+* [ENCRIPTADOR](Python/ENCRIPTACION/readme.md)
 * [HARCODED PASSWORD](Python/HARCODED_PASSWORD/HarcodedPassword.py)
 
 ## JAVA
