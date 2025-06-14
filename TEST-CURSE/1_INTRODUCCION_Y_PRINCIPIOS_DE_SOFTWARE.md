@@ -1,41 +1,33 @@
-REMEDIACIONES & QA
+Remediaciones & QA
+* Se ocupa de errores antes y despues de codificación<br>
+    -– Mediante: Planeación, Estandarazacion de codificación<br>
+    -– Test exaustivos a 2 dias Full Maximo (munales)<br>
+    -– Test exaustivos a 1/2 Dia Maximo (Automaticas)<br>
+    -– Identificar errores y reportarlos a jefes inmediatos<br>
+    -– No olvidar llenar bitacora de desarroolo y log en Apis<br>
+* Entregar hasta que software sea confiable y cumpla co requerimentos
+* Seguir en todo momento los lineamientos de seguridad para evitar hackeos en desarrollo y producto final
+* Definicion de prueba de Software<br>
+    Verificaión exaustiva del cumplimiento de requisitos Especificos<br>
+    Verificación del software sin bugs, errores y libre de datos expuestos<br>
+<br>
+Principios de preubas de Software<br>
+    1.- No es posible realizar todas las pruebas posibles en todos los casos.<br>
+        Por lo tanto: se debe decidir una cantidad Optima de pruebas.<br>
+        .- Por lo tanto nos preguntamos: ¿que operación es más probable que cause fallos en el S.O.?<br>
+    2.- Agrupación de defectos: la mayor cantidad de defectos del sistema se encuentra en una pequeña cantidad de Módulos<br>
+        Esto es la aplicación del principio de Pareto, en softawre se puede decir que <br>
+        El 80% de problemas se encuentran en el 20% de los Módulos<br>
+    3.- Las mimas pruebas no van a encontrar nuevos defectos (la paradoja de los pesticidas)<br>
+        Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones<br>
 
-* SE OCUPA DE ERRORES ANTES Y DESPUES DE CODIFICACIÓN<br>
-  -- MEDIANTE: PLANEACIÓN , ESTANDARAZACION DE CODIFICACIÓN<br>
-  -- TEST EXAUSTIVOS A 2 DIAS FULL MAXIMO ( MUNALES )<br>
-  -- TEST EXAUSTIVOS A 1/2 DIA MAXIMO  (AUTOMATICAS)<br>
-  -- IDENTIFICAR ERRORES Y REPORTARLOS A JEFES INMEDIATOS<br>
-  -- NO OLVIDAR LLENAR BITACORA DE DESARROOLO Y LOG EN APIS<br>
-
-* ENTREGAR HASTA QUE SOFTWARE SEA CONFIABLE Y CUMPLA CO REQUERIMENTOS
-* SEGUIR EN TODO MOMENTO LOS LINEAMIENTOS DE SEGURIDAD PARA EVITAR HACKEOS EN DESARROLLO Y PRODUCTO FINAL
-
-* DEFINICION DE PRUEBA DE SOFTWARE<br>
-    VERIFICAIÓN EXAUSTIVA DEL CUMPLIMIENTO DE REQUISITOS ESPECIFICOS<br>
-    VERIFICACIÓN DEL SOFTWARE SIN BUGS, ERRORES Y LIBRE DE DATOS EXPUESTOS<br>
-
-PRINCIPIOS DE PREUBAS DE SOFTWARE<br>
-  1.- NO ES POSIBLE REALIZAR TODAS LAS PRUEBAS POSIBLES EN TODOS LOS CASOS.<br>
-      POR LO TANTO:  SE DEBE DECIDIR UNA CANTIDAD OPTIMA DE PRUEBAS.<br>
-      .- POR LO TANTO NOS PREGUNTAMOS: ¿QUE OPERACIÓN ES MÁS PROBABLE QUE CAUSE FALLOS EN EL S.O.?<br>
-  
-  2.- AGRUPACIÓN DE DEFECTOS: LA MAYOR CANTIDAD DE DEFECTOS DEL SISTEMA SE ENCUENTRA EN UNA PEQUEÑA CANTIDAD DE MÓDULOS<br>
-      ESTO ES LA APLICACIÓN DEL PRINCIPIO DE PARETO, EN SOFTAWRE SE PUEDE DECIR QUE <br>
-      EL 80% DE PROBLEMAS SE ENCUENTRAN EN EL 20% DE LOS MÓDULOS<br>
-
-  3.- LAS MIMAS PRUEBAS NO VAN A ENCONTRAR NUEVOS DEFECTOS ( LA PARADOJA DE LOS PESTICIDAS )<br>
-      SI SE APLICAN LAS MISMAS PRUEBAS A UNA APLICACIÓN QUE VA CAMBIANDO ESTAS PRUEBAS NO ENCONTRARAN FALLAS EN LAS NUEVAS APLICACIONES<br>
-      LOS CASOS DE PRUEBAS SE DEBEN REVISAR CONSTANTEMENTE Y AGREGAR CASOS DE ERRORES NUEVOS <br>
-
-  4.- LAS PRUEBAS MUESTRAN LA PRESCENCIA DE DEFECTOS ( NO AL REVES )<br>
-      LA PRUEBA DEBE MOSTRAR EL DEFECTO, POR OTRO LADO LA PREUBA NO MUESTRA LA FALTA DE DEFECTO<br>
-
-  5.- LA AUSENCIA DEL ERROR - FALACIA<br>
-      LA META INICIAL ES QUE EL SOFTWARE ESTE AL 99% LIBRE DE RRORES Y SE PUEDA USAR.  <br>
-      QUERER EL 100% ES UNA META ALCANZABLE SOLO CON LOS PARAMETROS DE USO DEFINIDOS AL 100% ( SI ES POSIBLE APLCAR SI NO, HACER ENFASIS AL PUNTO 4)<br>
-
-  6.- PRUEBAS TEMPRANAS AHORRA TIEMPO Y DINERO<br>
-      ES MÁS COSTOSO TERMINAR EL SOFTWARE Y AL FINAL DESCUBRIR QUE TIENEN ERRORES POR CORREGIR EN UNA ARQUITECTURA QUE TAL VEZ REQUIERA MODIFICACIÓN<br>
-  
-   7.- LA PRUEBAS DEPENDEN DEL CONTEXTO<br>
-          UNA APLICACIÓN BANCARIA ES MUY DIFERENTE A UNA APLICACIÓN DEL SUPER, POR TANTO DEPENDE DEL CONTEXTO DE USO DECADA UNA LOS ASOS DE PREUBA QUE SE VAN A PLANEAR.<br>
+Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
+    4.- Las pruebas muestran la prescencia de defectos (no al reves)<br>
+        La prueba debe mostrar el defecto, por otro lado la preuba no muestra la falta de defecto<br>
+    5.- La ausencia del error – falacia<br>
+        La meta inicial es que el software este al 99% libre de rrores y se pueda usar. <Br>
+        Querer el 100% es una meta alcanzable solo con los parametros de uso definidos al 100% (si es posible aplcar si no, hacer enfasis al punto 4)<br>
+    6.- pruebas tempranas ahorra tiempo y dinero<br>
+        Es más costoso terminar el software y al final descubrir que tienen errores por corregir en una arquitectura que tal vez requiera modificación<br>
+    7.- La pruebas dependen del Contexto<br>
+        Una aplicación bancaria es muy diferente a una aplicación del Super, por tanto depende del contexto de uso decada una los ASOs de preuba que se van a planear.<br>
