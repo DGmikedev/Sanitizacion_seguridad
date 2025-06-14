@@ -21,8 +21,8 @@ Principios de preubas de Software<br>
     -  El 80% de problemas se encuentran en el 20% de los Módulos<br>
 <br>
 - Las mimas pruebas no van a encontrar nuevos defectos (la paradoja de los pesticidas)<br>
-    -  Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones<br>
-    -  Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
+    - Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones<br>
+    - Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
 <br>
 * Las pruebas muestran la prescencia de defectos (no al reves)<br>
 La prueba debe mostrar el defecto, por otro lado la preuba no muestra la falta de defecto<br>
