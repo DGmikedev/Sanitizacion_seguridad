@@ -1,10 +1,10 @@
 Remediaciones & QA
 * Se ocupa de errores antes y despues de codificación<br>
-    -– Mediante: Planeación, Estandarazacion de codificación<br>
-    -– Test exaustivos a 2 dias Full Maximo (munales)<br>
-    -– Test exaustivos a 1/2 Dia Maximo (Automaticas)<br>
-    -– Identificar errores y reportarlos a jefes inmediatos<br>
-    -– No olvidar llenar bitacora de desarroolo y log en Apis<br>
+    - Mediante: Planeación, Estandarazacion de codificación<br>
+    - Test exaustivos a 2 dias Full Maximo (munales)<br>
+    - Test exaustivos a 1/2 Dia Maximo (Automaticas)<br>
+    - Identificar errores y reportarlos a jefes inmediatos<br>
+    - No olvidar llenar bitacora de desarroolo y log en Apis<br>
 * Entregar hasta que software sea confiable y cumpla co requerimentos
 * Seguir en todo momento los lineamientos de seguridad para evitar hackeos en desarrollo y producto final
 * Definicion de prueba de Software<br>
@@ -12,15 +12,15 @@ Remediaciones & QA
     Verificación del software sin bugs, errores y libre de datos expuestos<br>
 <br>
 Principios de preubas de Software<br>
-    *  1.- No es posible realizar todas las pruebas posibles en todos los casos.<br>
-    --  Por lo tanto: se debe decidir una cantidad Optima de pruebas.<br>
-    --  Por lo tanto nos preguntamos: ¿que operación es más probable que cause fallos en el S.O.?<br>
-    *   2.- Agrupación de defectos: la mayor cantidad de defectos del sistema se encuentra en una pequeña cantidad de Módulos<br>
-    --  Esto es la aplicación del principio de Pareto, en softawre se puede decir que <br>
-    --  El 80% de problemas se encuentran en el 20% de los Módulos<br>
-    *   3.- Las mimas pruebas no van a encontrar nuevos defectos (la paradoja de los pesticidas)<br>
-    --  Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones<br>
-    --  Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
+1.  No es posible realizar todas las pruebas posibles en todos los casos.<br>
+    - Por lo tanto: se debe decidir una cantidad Optima de pruebas.<br>
+    - Por lo tanto nos preguntamos: ¿que operación es más probable que cause fallos en el S.O.?<br>
+2.  Agrupación de defectos: la mayor cantidad de defectos del sistema se encuentra en una pequeña cantidad de Módulos<br>
+    -  Esto es la aplicación del principio de Pareto, en softawre se puede decir que <br>
+    -  El 80% de problemas se encuentran en el 20% de los Módulos<br>
+3.  Las mimas pruebas no van a encontrar nuevos defectos (la paradoja de los pesticidas)<br>
+    -  Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones<br>
+    -  Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
 <br>
     *   4.- Las pruebas muestran la prescencia de defectos (no al reves)<br>
         La prueba debe mostrar el defecto, por otro lado la preuba no muestra la falta de defecto<br>
