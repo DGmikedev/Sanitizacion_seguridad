@@ -20,8 +20,8 @@ Principios de preubas de Software<br>
     -  Esto es la aplicación del principio de Pareto, en softawre se puede decir que <br>
     -  El 80% de problemas se encuentran en el 20% de los Módulos<br>
 <br>
-* Las mimas pruebas no van a encontrar nuevos defectos (la paradoja de los pesticidas)
-    -  Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones
+- Las mimas pruebas no van a encontrar nuevos defectos (la paradoja de los pesticidas)<br>
+    -  Si se aplican las mismas pruebas a una aplicación que va cambiando estas pruebas no encontraran fallas en las nuevas aplicaciones<br>
     -  Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
 <br>
 * Las pruebas muestran la prescencia de defectos (no al reves)<br>
