@@ -25,14 +25,22 @@ Principios de preubas de Software<br>
     -  Los casos de pruebas se deben revisar constantemente y agregar casos de errores nuevos <br>
 <br>
 * Las pruebas muestran la prescencia de defectos (no al reves)<br>
-        La prueba debe mostrar el defecto, por otro lado la preuba no muestra la falta de defecto<br>
+La prueba debe mostrar el defecto, por otro lado la preuba no muestra la falta de defecto<br>
 <br>
 * La ausencia del error – falacia<br>
-    -  La meta inicial es que el software este al 99% libre de rrores y se pueda usar. <br>
-    -  Querer el 100% es una meta alcanzable solo con los parametros de uso definidos al 100% (si es posible aplcar si no, hacer enfasis al punto 4)<br>
+    - La meta inicial es que el software este al 99% libre de rrores y se pueda usar. <br>
+    - Querer el 100% es una meta alcanzable solo con los parametros de uso definidos al 100% (si es posible aplcar si no, hacer enfasis al punto 4)<br>
 <br>
-* pruebas tempranas ahorra tiempo y dinero<br>
+* Pruebas tempranas ahorra tiempo y dinero<br>
     -  Es más costoso terminar el software y al final descubrir que tienen errores por corregir en una arquitectura que tal vez requiera modificación<br>
 <br>
 * La pruebas dependen del Contexto<br>
     -  Una aplicación bancaria es muy diferente a una aplicación del Super, por tanto depende del contexto de uso decada una los casos de preuba que se van a planear.<br>
+
+
+- Elemento de lista 1
+- Elemento de lista 2
+    - Elemento de lista 3
+    - Elemento de lista 4
+        - Elemento de lista 5
+        - Elemento de lista 6
