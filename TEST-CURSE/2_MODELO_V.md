@@ -1,16 +1,9 @@
-# MODELO V
-
-### (SDLC) SOFTWAR DEVELOPMENT LIFE CYCLE
-
-#### DEL BOCETO AL MANTENIMENTO
-
-* EL CICLO DE VIDA DEL SOFTWARE COMPRENDE DESDE LA PALNEACIÓN HAST AEL MANTENIMIENTO PASANDO POR OTROS PASOS.
-
-    1.- PLANEACIÓN (PLANING) TODO EL QUIPO PLANTEA LA SOLUCIÓON A LAS PREGUNTAS: <br>
-        A) ¿QUE SOFTWARE SE VA A HACER?, QUE REQUERIMEINTO SOLUCIONA EL SOFTWARE<br>
-        B) ¿COMO SE VA A HACER?, MODELOS DE DISEÑO, QUE TIPO DE BDT´S SE AJUSTA, TECNOLOGÍAS, <br>
-        C) ¿CUANDO SE VA A HCER?, SE DEBE PLANEAR DESDE LA PRIMERA FECHA DE LA JUNTA DE PLANEACIÓN HASTA DE SER POSIBLE LAS FECHAS  DE EL PRIMER MENTENIMIENTO DE LA PRIMERA VERSION, PASANDO POR FECHAS CLAVE COMO <br>
-    
-
-
-### (STLC) SOFTAWRE TESTING  LIFE CYCLE
+# modelo V
+### (SDLC) Softwar Development Life Cycle
+#### del boceto al mantenimento
+* El ciclo de vida del software comprende desde la palneación hast ael mantenimiento pasando por otros pasos.
+- Planeación (planing) todo el quipo plantea la solucióon a las preguntas: <br>
+&nbsp;&nbsp;&nbsp;&nbsp; * ¿Que software se va a hacer?, que requerimeinto soluciona el Software<br>
+&nbsp;&nbsp;&nbsp;&nbsp; * ¿como se va a hacer?, modelos de diseño, que tipo de BDT’s se ajusta, tecnologías, <br>
+&nbsp;&nbsp;&nbsp;&nbsp; *¿cuando se va a hcer?, se debe planear desde la primera fecha de la Junta de Planeación hasta de ser posible las fechas de el primer mentenimiento de la primera version, pasando por fechas clave como <br>
+### (STLC) softawre testing Life Cycle
