@@ -62,7 +62,7 @@
         <td> :skull_and_crossbones: strlen | :green_heart: strnlen</td>
         <td>wcslen</td>
         <td>_tcslen</td>
-        <td>memset</td>
+        <td> :skull_and_crossbones: memset | :green_heart: std::fill, std::fill_n, std::vector </td>
         <td>memcpy</td>
     </tr>
     <tr>
