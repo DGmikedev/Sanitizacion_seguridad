@@ -37,11 +37,41 @@
 [CATÁLGOO_DE_FUCNIONES_DEPRECADAS_C++_2003](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md)
 
 <table>
-    <tr><td>strcat</td><td>wcscat</td><td>_tcsat</td><td>lstrcat</td><td>StrCat</td></tr>
-    <tr><td>wsprintf</td><td>wnsprintf</td><td>sprintf</td><td>swprintf</td><td>_stprintf</td></tr>
-    <tr><td>_sntprintf</td><td>atol</td><td>atoi</td><td>_snprintf</td><td>_snwprintf</td></tr>
-    <tr><td>strlen</td><td>wcslen</td><td>_tcslen</td><td>memset</td><td>memcpy</td></tr>
-    <tr><td>strncpy</td><td>wcsncpy</td><td>_tcsncpy</td><td>CopyFile</td><td>mkdir</td></tr>
+    <tr>
+        <td>strcat</td>
+        <td>wcscat</td>
+        <td>_tcsat</td>
+        <td>lstrcat</td>
+        <td>StrCat</td>
+    </tr>
+    <tr>
+        <td>wsprintf</td>
+        <td>wnsprintf</td>
+        <td>sprintf</td>
+        <td>swprintf</td>
+        <td>_stprintf</td>
+    </tr>
+    <tr>
+        <td>_sntprintf</td>
+        <td>atol</td>
+        <td>atoi</td>
+        <td>_snprintf</td>
+        <td>_snwprintf</td>
+    </tr>
+    <tr>
+        <td>[x]strlen | [ok]strnlen(C_PP\cpp_2003\DEPRECATEDSFUNCTION_CAT\strlen_alternative.cpp) </td>
+        <td>wcslen</td>
+        <td>_tcslen</td>
+        <td>memset</td>
+        <td>memcpy</td>
+    </tr>
+    <tr>
+        <td>strncpy</td>
+        <td>wcsncpy</td>
+        <td>_tcsncpy</td>
+        <td>CopyFile</td>
+        <td>mkdir</td>
+    </tr>
 </table>
 
 ## PHP
