@@ -59,7 +59,7 @@
         <td>_snwprintf</td>
     </tr>
     <tr>
-        <td>[x]strlen | [ok]strnlen(C_PP\cpp_2003\DEPRECATEDSFUNCTION_CAT\strlen_alternative.cpp) </td>
+        <td>[x]strlen | [ok]strnlen </td>
         <td>wcslen</td>
         <td>_tcslen</td>
         <td>memset</td>
