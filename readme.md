@@ -34,7 +34,7 @@
 * [UNCHECKED_RETURN_VALUE](C_PP/UNCHECKED_RETURN_VALUE.cpp)
 * [USE_OF_OBSOLETE_FUNCTIONS](C_PP/USE_OF_OBSOLETE_FUNCTIONS.cpp)
 
-[CATÁLGOO_DE_FUCNIONES_DEPRECADAS_C++_2003](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md)
+[CATÁLGOO_DE_FUCNIONES_DEPRECADAS_C++_2003 WINDOWS](C_PP/cpp_2003/CAT_FUNC_DEPRECATED_2003.md)
 
 <table>
     <tr>
@@ -62,7 +62,7 @@
         <td> :skull_and_crossbones: strlen | :green_heart: strnlen</td>
         <td>wcslen</td>
         <td>_tcslen</td>
-        <td> :skull_and_crossbones: memset | :green_heart: std::fill, std::fill_n, std::vector </td>
+        <td> :skull_and_crossbones: memset | :green_heart: [std::fill]  [std::fill_n]   [std::vector] </td>
         <td>memcpy</td>
     </tr>
     <tr>
