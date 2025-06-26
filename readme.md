@@ -59,7 +59,7 @@
         <td>_snwprintf</td>
     </tr>
     <tr>
-        <td>[:skull_and_crossbones:]strlen | [:green_heart:]strnlen </td>
+        <td> :skull_and_crossbones: strlen | :green_heart: strnlen </td>
         <td>wcslen</td>
         <td>_tcslen</td>
         <td>memset</td>
