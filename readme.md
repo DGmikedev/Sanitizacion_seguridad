@@ -59,7 +59,7 @@
         <td>_snwprintf</td>
     </tr>
     <tr>
-        <td> :skull_and_crossbones: strlen | :green_heart: <span style="color:green;">strnlen</span></td>
+        <td> :skull_and_crossbones: strlen | :green_heart: <span style="color:green;">[strnlen](C_PP\cpp_2003\DEPRECATEDSFUNCTION_CAT\strlen_alternative.cpp)</span></td>
         <td>wcslen</td>
         <td>_tcslen</td>
         <td>memset</td>
