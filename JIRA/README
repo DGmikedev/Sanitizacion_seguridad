@@ -1,0 +1,26 @@
+# Curso de jira Coppel
+
+Home -> prodcutos -> Jira, Confluence.
+
+
+Jira -> apoyo, Unity, arquitectura
+
+Proyectos =  [nombre, key, tipo proyecto]
+
+proyectos -> tableros = información de desarrollo
+    tableros -> epicas, remedicaciones, mejoras
+
+proyectos -> manger -> agrega personas, personas -> deben tener licencia
+proyectos -> sumary => información del proyecto
+
+tarjetas -> impedimentos , riesgo materializado
+tarjetas -> dependencias de otro equipo o otrra area.
+tarjetas -> sub_task,  actividades del día a día
+tarjetas -> task, actividades administrativas e inidrectas, no están relacionadas con las tarjetas anteriores.
+tarjetas -> tienen prioridades
+
+workflows -> flujo de trabajo por tipo de tarjeta -> Desarrollo operativo
+un flujo de trabajo por tarjeta.
+
+revision: sumary, timeline(solo en epicas), kanban board, calendar, reports(scrum, ciclytime, analitica, test), listas, forms(actividades repetitivas con info precargada), golds, allwork(todos los componentes), componentes, development(pullrequest)
+
