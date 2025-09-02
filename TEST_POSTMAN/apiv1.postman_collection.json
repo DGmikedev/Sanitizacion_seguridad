@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "33ea3036-d9d9-4d52-a0c8-b0d64e7d0cc8",
+		"name": "Booker",
+		"description": "Collecciones desde restful-booker.\n\n[https://restful-booker.herokuapp.com/](https://restful-booker.herokuapp.com/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48035435"
+	},
+	"item": [
+		{
+			"name": "Create-Booker",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// ESTATUS CODE == 200 ??\r",
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200) });\r",
+							"\r",
+							"// REPONSE\r",
+							"var jsonData =            pm.response.json(); \r",
+							"var bookingId =           jsonData.bookingid;\r",
+							"var lastName =            jsonData.booking.lastname;\r",
+							"var firstName =           jsonData.booking.firstname;\r",
+							"var totalPrice =          jsonData.booking.totalprice;\r",
+							"var depositPaid =         jsonData.booking.depositpaid;\r",
+							"var bookingDateCheckIn =  jsonData.booking.bookingdates.checkin;\r",
+							"var bookingDateCheckOut = jsonData.booking.bookingdates.checkout;\r",
+							"var additionalNeeds =     jsonData.booking.additionalneeds;\r",
+							"\r",
+							"// BLOQUE DE VERIFICACIÓN DE EXISTENCIA DE DATOS\r",
+							"pm.test(\"Veridicando bookingId\",            ()=>{ pm.expect(bookingId).to.not.be.null            });\r",
+							"pm.test(\"Vaerificando lastName\",            ()=>{ pm.expect(lastName).to.not.be.empty            });\r",
+							"pm.test(\"Vaerificando firstName\",           ()=>{ pm.expect(firstName).to.not.be.empty           });\r",
+							"pm.test(\"Vaerificando totalPrice\",          ()=>{ pm.expect(totalPrice).to.not.be.null           });\r",
+							"pm.test(\"Vaerificando depositPaid\",         ()=>{ pm.expect(depositPaid).to.not.be.null          });\r",
+							"pm.test(\"Vaerificando bookingDateCheckIn\",  ()=>{ pm.expect(bookingDateCheckIn).to.not.be.empty  });\r",
+							"pm.test(\"Vaerificando bookingDateCheckOut\", ()=>{ pm.expect(bookingDateCheckOut).to.not.be.empty });\r",
+							"pm.test(\"Vaerificando additionalNeeds\",     ()=>{ pm.expect(additionalNeeds).to.not.be.empty     });\r",
+							"\r",
+							"// BLOQUE DE GUARDADO EN EAMBIENTE DE VALORES RETORNADOS\r",
+							"pm.environment.set(\"bookingId\", bookingId);\r",
+							"pm.environment.set(\"lastName\", lastName);\r",
+							"pm.environment.set(\"firstName\", firstName);\r",
+							"pm.environment.set(\"totalPrice\", totalPrice);\r",
+							"pm.environment.set(\"depositPaid\", depositPaid);\r",
+							"pm.environment.set(\"bookingDateCheckIn\", bookingDateCheckIn);\r",
+							"pm.environment.set(\"bookingDateCheckOut\", bookingDateCheckOut);\r",
+							"pm.environment.set(\"additionalNeeds\", additionalNeeds);\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"// VERIFICANDO DATOS DE RETORNO\r",
+							"// pm.test(\"Verficando Last Name\", ()=>{\r",
+							"//     var \r",
+							"// });\r",
+							"/*\r",
+							"\"firstname\": \"User One UPDATED\",\r",
+							"    \"lastname\": \"Last_Name_One\",\r",
+							"    \"totalprice\": 1500,\r",
+							"    \"depositpaid\": true,\r",
+							"    \"bookingdates\": {\r",
+							"        \"checkin\": \"2018-01-01\",\r",
+							"        \"checkout\": \"2019-01-01\"\r",
+							"    },\r",
+							"    \"additionalneeds\": \"Breakfast\"\r",
+							"    */\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\" : \"Primer nombre de libro de pruebas\",\r\n    \"lastname\" : \"primer apellido de libro de pruebas\",\r\n    \"totalprice\" : 55000,\r\n    \"depositpaid\" : false,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"nothing\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{booker}}/booking",
+					"host": [
+						"{{booker}}"
+					],
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Booker",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// VERIFICACIÓN CODIGO 200\r",
+							"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200) });\r",
+							"\r",
+							"// RECUPERACIÓN DE DATA\r",
+							"var jsonData =            pm.response.json();\r",
+							"//var bookingId =           jsonData.bookingid;\r",
+							"var lastName =            jsonData.lastname;\r",
+							"var firstName =           jsonData.firstname;\r",
+							"var totalPrice =          jsonData.totalprice;\r",
+							"var depositPaid =         jsonData.depositpaid;\r",
+							"var bookingDateCheckIn =  jsonData.bookingdates.checkin;\r",
+							"var bookingDateCheckOut = jsonData.bookingdates.checkout;\r",
+							"var additionalNeeds =     jsonData.additionalneeds;\r",
+							"\r",
+							"// BLOQUE DE COMPARACIÓN DE DATOS INSERTADOS CON DATOS RECUPERADOS\r",
+							"pm.test(\"Verificando request de lastName correcta\", ()=>{ \r",
+							"    console.log(`- lastName - obtenido:${lastName} vs Guardado: ${pm.environment.get(\"lastName\")}`); \r",
+							"    pm.expect(lastName).to.eql(pm.environment.get(\"lastName\")) \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificando request de firstName corecta\",  ()=>{ \r",
+							"    console.log(`- firstName - obtenido:${firstName} vs Guardado: ${pm.environment.get(\"firstName\")}`); \r",
+							"    pm.expect(firstName).to.eql( pm.environment.get(\"firstName\"))\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificando request de totalPrice corecta\",  ()=>{ \r",
+							"    console.log(` - totalPrice - obtenido:${totalPrice} vs Guardado: ${pm.environment.get(\"totalPrice\")}`) \r",
+							"    pm.expect(totalPrice).to.eql( pm.environment.get(\"totalPrice\"))\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificando request de depositPaid corecta\",  ()=>{ \r",
+							"    console.log(` - depositPaid - obtenido:${depositPaid} vs Guardado: ${pm.environment.get(\"depositPaid\")}`); \r",
+							"    pm.expect(depositPaid).to.eql( pm.environment.get(\"depositPaid\"))\r",
+							"});\r",
+							"pm.test(\"Verificando request de bookingDateCheckIn corecta\",  ()=>{ \r",
+							"    console.log(` - bookingDateCheckIn - obtenido:${bookingDateCheckIn} vs Guardado: ${pm.environment.get(\"bookingDateCheckIn\")}`); \r",
+							"    pm.expect(bookingDateCheckIn).to.eql( pm.environment.get(\"bookingDateCheckIn\"))\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verificando request de bookingDateCheckOut corecta\",  ()=>{ \r",
+							"    console.log(` - bookingDateCheckOut - obtenido: ${bookingDateCheckOut} vs Guardado: ${pm.environment.get(\"bookingDateCheckOut\")}`); \r",
+							"    pm.expect(bookingDateCheckOut).to.eql( pm.environment.get(\"bookingDateCheckOut\"))}\r",
+							");\r",
+							"\r",
+							"pm.test(\"Verificando request de additionalNeeds corecta\",  ()=>{ \r",
+							"    console.log(` - additionalNeeds - obtenido: ${additionalNeeds} vs Guardado: ${pm.environment.get(\"additionalNeeds\")}`); \r",
+							"    pm.expect(additionalNeeds).to.eql( pm.environment.get(\"additionalNeeds\"))\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{booker}}/booking/{{bookingId}}",
+					"host": [
+						"{{booker}}"
+					],
+					"path": [
+						"booking",
+						"{{bookingId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-Booker",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=abc123"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstname\": \"User One UPDATED\",\r\n        \"lastname\": \"Last_Name_One\",\r\n        \"totalprice\": 1500,\r\n        \"depositpaid\": true,\r\n        \"bookingdates\": {\r\n            \"checkin\": \"2018-01-01\",\r\n            \"checkout\": \"2019-01-01\"\r\n        },\r\n        \"additionalneeds\": \"Breakfast\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{booker}}/booking/603",
+					"host": [
+						"{{booker}}"
+					],
+					"path": [
+						"booking",
+						"603"
+					]
+				},
+				"description": "Generated from cURL: curl -X PUT \\\r\n  https://restful-booker.herokuapp.com/booking/1 \\\r\n  -H 'Content-Type: application/json' \\\r\n  -H 'Accept: application/json' \\\r\n  -H 'Cookie: token=abc123' \\\r\n  -d '{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Booker",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=abc123"
+					}
+				],
+				"url": {
+					"raw": "https://restful-booker.herokuapp.com/booking/1",
+					"protocol": "https",
+					"host": [
+						"restful-booker",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"booking",
+						"1"
+					]
+				},
+				"description": "Generated from cURL: curl -X DELETE \\\r\n  https://restful-booker.herokuapp.com/booking/1 \\\r\n  -H 'Content-Type: application/json' \\\r\n  -H 'Cookie: token=abc123'"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{password}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{username}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "booker",
+			"value": ""
+		}
+	]
+}
