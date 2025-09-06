@@ -11,10 +11,12 @@ function commandExe(command){
 }
 
 (async ()=>{
-    const command = 'curl yoururl.com > salida.txt';
+    const command = 'dir';
     try{
         const outComm = await commandExe(command);
-        console.log(`Comando [${command}] ejecutado con exito`);
+        console.log(`\n====== Comando [${command}] ejecutado con exito ======\n`);
+        console.log(outComm);
+        console.log("========================");
     }catch(err){
         console.log(`Error al ejecutra el comando: [${command}]\nerror = ${err}`);
     }
