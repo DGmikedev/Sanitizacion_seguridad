@@ -1,0 +1,27 @@
+{
+  "name": "curso_node",
+  "version": "1.0.0",
+  "description": "Es un curso para refinar el uso de node, primera fase",
+  "keywords": [
+    "node",
+    "curso"
+  ],
+  "homepage": "https://github.com/DGmikedev/Sanitizacion_seguridad#readme",
+  "bugs": {
+    "url": "https://github.com/DGmikedev/Sanitizacion_seguridad/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGmikedev/Sanitizacion_seguridad.git"
+  },
+  "license": "ISC",
+  "author": "DGmike.dev",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1"
+  }
+}
