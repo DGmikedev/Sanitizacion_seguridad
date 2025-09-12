@@ -11,5 +11,3 @@ proceso.exec("start firefox https://youtube.com", (error, stdout, stderr) => {
   }
   console.log(`Salida estándar (stdout): ${stdout}`);
 });
-
-

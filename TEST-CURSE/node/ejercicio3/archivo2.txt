@@ -1,0 +1,6 @@
+CONTENIDO ARCHIVO 2
+C:\Users\El JEFE\Desktop\repositorios\Sanitizacion_seguridad\TEST-CURSE\node\ejercicio3>node ej3_file_sistem.js
+Tamaño : 98
+Fichero? : true
+Directorio? : false
+Es acceso directo? : false

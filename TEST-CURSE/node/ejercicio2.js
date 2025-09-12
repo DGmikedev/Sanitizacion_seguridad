@@ -1,5 +1,5 @@
 const readLiner = require('readline');
-const cls = require('child_process');
+
 
 const handlerln = readLiner.createInterface({
     input:   process.stdin,
@@ -32,23 +32,9 @@ try {
 	console.error(error);
 }
 
-
-////// MENU  ///////////////////////////////
-
-const menu = `========================
-a) opcion 1
-b) opcion 2
-c) opcion 3
-d) opcion 4
-e) salir
-========================
-`;
-
-
-cls.exec('cls');
-
-handlerln.question(menu, (eleccion)=>{
-    
-    console.log("Opcion elegida (" + eleccion + ")");
-    handlerln.close();    
+handlerln.question("Presione para salir", ()=>{
+    console.log("Adios!");
+    handlerln.close(); 
 });
+
+
