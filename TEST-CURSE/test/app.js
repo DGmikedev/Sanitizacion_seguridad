@@ -1,12 +1,7 @@
-import { DataTypeError } from './src/results/Error.js';
+import { determinant2x2 } from './src/arrays/determinants.js';
 
+let arri = [[0,0],[8,2]];
 
-const text_inicio = "SE INICIA APLICACIÓN";
- try{
-    let res = 0/0;
- }catch(error){
-    console.log(new DataTypeError("Este es un mensajhe de Error personalizado" + error))
- }
+let resp = determinant2x2(arri)
 
-
-console.log(text_inicio);
+console.log(resp);
