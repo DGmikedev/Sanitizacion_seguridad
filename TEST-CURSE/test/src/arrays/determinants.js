@@ -14,7 +14,7 @@ export function determinant2x2(arr) {
     // Block of validations
     let { status, msg, res } = iSSquareAndNumc(arr);
     if (!status)
-        return result(status, msg + '[determinant2x2]', res);
+        return result(status, msg + ' [determinant2x2]', res);
     // end block   
     try {
         determinant = (arr[0][0] * arr[1][1]);

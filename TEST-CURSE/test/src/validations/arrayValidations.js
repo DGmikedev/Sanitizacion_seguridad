@@ -17,7 +17,7 @@ export function iSSquareAndNumc(arr) {
             }
             vector.forEach((number) => {
                 ind = index;
-                if (isNaN(number) || typeof (number) == 'boolean') {
+                if (isNaN(number) || typeof (number) == 'boolean' || number == null ) {
                     throw (new DataError(`${msgW} this have a Not Number: [ ${number} ]  ${lng} x ${vector.length} --  ${arr} `));
                 }
             });
