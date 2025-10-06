@@ -45,7 +45,8 @@ export function determinant3x3(arr_input) {
     if (!status)
         return result(status, msg + ' [determinant3x3]', res);
     // end block
-    const arr = [arr_input[0], // arr_input[0] [a, b, c ];
+    const arr = [
+        arr_input[0], // arr_input[0] [a, b, c ];
         arr_input[1], // arr_input[1] [e, f, g ];
         arr_input[2], // arr_input[2] [i, j, k ];
         arr_input[0], // arr_input[0] [a, b, c ];
