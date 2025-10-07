@@ -5,4 +5,8 @@ export default {
  collectCoverage: true,
  coverageReporters: ["html", "text"],
  coverageDirectory: "coverage"
+  transform: {},               // desactiva Babel si no lo usas
+  collectCoverage : true,
+  coverageReporters : ["html", "text"],
+  coverageDirectory : "report_out_test"
 };
