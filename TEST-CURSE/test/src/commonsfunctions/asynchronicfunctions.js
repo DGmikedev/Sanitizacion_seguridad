@@ -7,10 +7,16 @@ export function promiseWithTimeOut(){
 }
 
 export async function getFetchApi(){
-    const url = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=0';
+    const url = 'https://api.github.com/users/DGmikedev';
     const apires = await fetch(url)
     const respuesta = await apires.json();
-    console.log(respuesta.results)
+    return respuesta
+}
 
+export async function get404FromApiGitHub(){
+    const url= "https://api.github.com/users/Did´nt exist";
+    const resp404 = await fetch(url);
+    const data404 = await resp404.json();
+    return data404;
 }
 
