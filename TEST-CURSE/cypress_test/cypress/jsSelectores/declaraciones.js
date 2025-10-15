@@ -1,7 +1,7 @@
 let strXML = " ===> <tag1>Etiqueta 1</tag1>"
 
 let objXML = {
-    tag:"tag_entrada",
+    tag:'//*[@id="edit-contact-name"]',
     tag2:"tag_entrada_2",
     tag3:"tag_entrada_3"
 }
