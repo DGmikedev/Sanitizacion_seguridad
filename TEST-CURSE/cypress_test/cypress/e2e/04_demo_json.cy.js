@@ -38,12 +38,10 @@ describe("DEMO 4", ()=>{
                 cy.xpath(formulario.Phone).type(jsn_phone);
 
                 // manupiular el scroll de la  ventana
-                cy.window().then((win) =>{
+                cy.window().then((win) =>{ 
                     win.scrollBy(0, -500);
                 });
-
                 cy.wait(2000);
-
             });
         })
     })
